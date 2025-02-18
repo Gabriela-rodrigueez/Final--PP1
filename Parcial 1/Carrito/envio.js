@@ -5,16 +5,16 @@ function calcularEnvio() {
     // Calcula el costo de envío basado en el país ingresado
     switch (pais.toLowerCase()) {
         case 'argentina':
-            costoEnvio = 10.000;
+            costoEnvio = 10000;
             break;
         case 'chile':
-            costoEnvio = 18.000;
+            costoEnvio = 18000;
             break;
         case 'brasil':
-            costoEnvio = 30.000;
+            costoEnvio = 30000;
             break;
         default:
-            costoEnvio = 35.000;
+            costoEnvio = 35000;
     }
 
     // Muestra el resultado del costo de envío

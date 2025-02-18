@@ -10,7 +10,7 @@ if (!isset($_SESSION['usuario_id'])) {
 
 $usuario_id = $_SESSION['usuario_id'];
 
-echo "Usuario ID: " . $usuario_id . "<br>";  // Depuración: verifica si el usuario está bien autenticado
+echo "Usuario ID: " . $usuario_id . "<br>";  // verifica si el usuario está bien autenticado
 
 $sql = "SELECT P.producto_id, P.nombre, P.precio, P.imagen 
         FROM Favoritos F

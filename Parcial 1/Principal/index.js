@@ -239,7 +239,6 @@ function agregarFavorito(producto_id) {
         corazon.classList.toggle("fa-solid");
         corazon.style.color = corazon.classList.contains("fa-solid") ? "red" : "gray";
 
-        // Aquí podrías agregar una solicitud AJAX para guardar el favorito en la base de datos
         let xhr = new XMLHttpRequest();
         xhr.open("POST", "Guardar.php", true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -301,10 +300,10 @@ window.onload = function() {
     .then(data => {
         if (data.status === 'success') {
             // Si la sesión está activa, redirigimos a la página principal
-            window.location.href = 'IsMaJo.html'; // O la ruta correcta a tu página principal
+            window.location.href = 'IsMaJo.html';
         } else {
             // Si no está activo, redirigimos al login
-            window.location.href = 'Formulario\Login.php'; // O la ruta correcta de tu login
+            window.location.href = 'Formulario\Login.php';
         }
     })
     .catch(error => {

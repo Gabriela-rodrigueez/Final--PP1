@@ -23,7 +23,7 @@ function mostrarFavoritos() {
         // Verificar si hay error de autenticación
         if (data.error) {
             contenedor.innerHTML = "<p>No estás autenticado.</p>";
-            console.error("Error de autenticación:", data.error);  // Depuración
+            console.error("Error de autenticación:", data.error);  
             return;
         }
 
@@ -67,7 +67,7 @@ function eliminarFavorito(producto_id) {
     })
     .then(response => response.text())
     .then(data => {
-        console.log("Eliminar respuesta:", data);  // Verifica la respuesta de eliminación
+        console.log("Eliminar respuesta:", data);  
         mostrarFavoritos(); // Recargar la lista después de eliminar
     })
     .catch(error => console.error("Error al eliminar favorito:", error));
@@ -83,7 +83,7 @@ function agregarFavorito(producto_id) {
     })
     .then(response => response.text())
     .then(data => {
-        console.log("Agregar respuesta:", data);  // Verifica la respuesta de agregar
+        console.log("Agregar respuesta:", data);  
         alert(data); // Muestra el mensaje de éxito o error
     })
     .catch(error => console.error("Error al agregar favorito:", error));
