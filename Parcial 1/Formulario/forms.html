@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="website icon" href="../Principal/assets/Logo-circular verde.png">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Principal/IsMaJo.html">
+    <link rel="stylesheet" href="../Favoritos/fav.html">
+    <link rel="stylesheet" href="../Carrito/compras.html">
+    <link rel="stylesheet" href="../Carrito/costo_envio.html">
+
+
+</head>
+<body>
+    
+  <div class="container-user-cart">
+    <!-- <a href="/Principal/IsMaJo.html" (OTRA MANERA)> -->
+    <a href="../Principal/IsMaJo.html" class="tab" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </svg>
+    </a>                      
+  </div>
+
+
+  <div class="container">
+    <div class="welcome">
+        <div class="pinkbox">
+
+          <!-- registrarse -->
+            <div class="signup nodisplay">
+                <h1>Registrarse</h1>
+                <form id="registerForm" a="Registro.php" method="POST" autocomplete="off"> 
+                    <input type="text" id="username" name="username" placeholder="Usuario" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required onkeyup="checkPassword(this.value)">
+                    <span id="toggleBtn"></span>
+
+                    <div class="validacion">
+                      <ul>
+                        <li id="lower">At least one lowercase character</li>
+                        <li id="upper">At least one uppercase character</li>
+                        <li id="number">At least one number</li>
+                        <li id="special">At least one special character</li>
+                        <li id="length">At least 8 characters</li>
+                      </ul>
+                    </div>
+
+                    <input type="date" id="date" name="date" placeholder="Fecha de Nacimiento" required>
+                      
+                    <!-- Términos y Condiciones  -->
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input type="checkbox" id="checkTerms" class="form-check-input" required>
+                        <!-- name="checkTerms" -->
+                        <label for="checkTerms" class="form-check-label">Acepto los términos y condiciones</label>
+                        <!-- <div class="invalid-feedback">Es necesario aceptar los términos y condiciones </div> -->
+                      </div>
+                    </div>
+
+                    <!-- Botón Enviar  -->
+                    <button type="submit" class="button submit">Crear Cuenta</button>
+                    <div id="formMessage"></div>
+                </form>    
+            </div>
+
+
+            <!-- Iniciar seción -->
+            <div class="signin">
+                <h2>Iniciar Sesión</h2>
+                <form id="formsForm" class="more-padding" action="Login.php" method="POST" autocomplete="off">
+                  <input type="text" name="username" placeholder="Usuario">
+                  <input type="password" name="password" placeholder="Contraseña">
+                  <div class="checkbox">
+                      <label for="remember">
+                        <input type="checkbox" name="remember" id="remember"> Recordarme
+                    </label>
+                  </div>
+                  <button type="submit" name="login" class="button submit">Iniciar sesión</button>
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class="leftbox">
+          <h2 class="title"><span>IsMaJo</span></h2>
+          <p class="desc">Elige tu <span>producto</span> perfecto</p>
+          <img class="flower smaller" src="https://image.ibb.co/d5X6pn/1357d638624297b.jpg" alt="Flower">
+          <p class="account">¿Tienes una cuenta?</p>
+          <button class="button" id="signin">Iniciar Sesión</button>
+        </div>
+        <div class="rightbox">
+          <h2 class="title"><span>IsMaJo</span></h2>
+          <p class="desc">Elige tu <span>producto</span> perfecto</p>
+          <img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg" alt="Flower">
+          <p class="account">¿No tienes una cuenta?</p>
+          <button class="button" id="signup">Regístrate</button>
+        </div>
+    </div>
+  </div>
+  <!-- <button id="logout" class="button">Cerrar Sesión</button> -->
+
+
+  <!-- Realiza el movimiento del registro e iniciar secion-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="forms.js"></script>
+
+
+</body>
+</html>
+
+
+<!-- http://localhost:8000/Formulario/forms.html
+ -->
+
+
+ <!-- The requested resource /Formulario/IsMaJo.html was not found on this server. -->

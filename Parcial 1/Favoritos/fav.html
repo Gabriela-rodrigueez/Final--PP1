@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+    <link rel="website icon" href="../Principal/assets/Logo-circular verde.png">
+    <link rel="stylesheet" href="fav.css">
+    <link rel="stylesheet" href="../Principal/IsMaJo.html">
+    <link rel="stylesheet" href="../Formulario/forms.html">
+    <link rel="stylesheet" href="../Carrito/compras.html">
+    <link rel="stylesheet" href="../Carrito/costo_envio.html">
+
+</head>
+<body>
+    
+    <div class="contenido">
+        <h1 class="title">Mis Productos Favoritos 
+            <div class="aurora">
+                <div class="aurora__item"></div>
+                <div class="aurora__item"></div>
+                <div class="aurora__item"></div>
+                <div class="aurora__item"></div>
+              </div>
+        </h1>
+        <p class="subtitulo">Los productos que deseas a un solo click</p>
+    </div>
+    
+    <div class="container-favoritos">
+        <div class="item" >
+            <img src="../Principal/assets/1720216601205.png" alt="Tote bag" onerror="this.onerror=null; this.src='Parcial 1/Principal/assets/1720216601205.png'">
+            <h2>Tote bag mediana</h2>
+            <p class="price">$30.600</p>
+            <button onclick="agregarFavorito(1, 'Tote bag mediana', 30600, '../Principal/assets/1720216601205.png')">❤️</button>
+        </div>
+        
+        <div class="item" >
+            <img src="../Principal/assets/1720216601191.jpg" alt="Mochila" onerror="this.onerror=null; this.src='Parcial 1/Principal/assets/1720216601191.jpg'">
+            <h2>Mochila</h2>
+            <p class="price">$28.000</p>
+            <button onclick="agregarFavorito(2, 'Mochila', 28000, '../Principal/assets/1720216601191.jpg')">❤️</button>
+        </div>
+        
+        <div class="item" >
+            <img src="../Principal/assets/1720216601183.jpg" alt="Riñonera" onerror="this.onerror=null; this.src='Parcial 1/Principal/assets/1720216601183.jpg'">
+            <h2>Riñonera</h2>
+            <p class="price">$15.000</p>
+            <button onclick="agregarFavorito(3, 'Riñonera', 15000, '../Principal/assets/1720216601183.jpg')">❤️</button>
+        </div>
+        
+        <div class="item">
+            <img src="../Principal/assets/1720216601240.png" alt="Neceser" onerror="this.onerror=null; this.src='Parcial 1/Principal/assets/1720216601240.png'">
+            <h2>Neceser</h2>
+            <p class="price">$11.400</p>
+            <button onclick="agregarFavorito(4, 'Neceser', 11400, '../Principal/assets/1720216601240.png')">❤️</button>
+        </div>
+        
+        <div class="item" >
+            <img src="../Principal/assets/1720216601250.png" alt="Buzo anime" onerror="this.onerror=null; this.src='Parcial 1/Principal/assets/1720216601250.png'">
+            <h2>Buzo anime</h2>
+            <p class="price">$23.000</p>
+            <button onclick="agregarFavorito(5, 'Buzo anime', 23000, '../Principal/assets/1720216601250.png')">❤️</button>
+        </div>
+        
+        <div class="item">
+            <img src="../Principal/assets/1720216601258.png" alt="Camiseta anime" onerror="this.onerror=null; this.src='Parcial 1/Principal/assets/1720216601258.png'">
+            <h2>Camiseta anime</h2>
+            <p class="price">$12.700</p>
+            <button onclick="agregarFavorito(5, 'Camiseta anime', 12700, '../Principal/assets/1720216601258.png')">❤️</button>  
+        </div>
+    </div>
+
+    <a href="../Principal/IsMaJo.html" class="btn-volver">Volver a la tienda</a>
+
+    <script src="fav.js"></script>
+</body>
+</html>

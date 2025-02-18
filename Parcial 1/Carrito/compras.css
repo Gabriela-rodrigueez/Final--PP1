@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#carrito {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.producto:last-child {
+    border-bottom: none;
+}
+
+.info-producto {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.info-producto h2, .info-producto p {
+    margin: 0;
+}
+
+.cantidad-producto {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.precio-producto {
+    color: #333;
+}
+
+.icon-close {
+    cursor: pointer;
+    color: #e74c3c;
+    transition: color 0.3s ease;
+}
+
+.icon-close:hover {
+    color: #c0392b;
+}
+
+button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 10px; /* Margen entre botones */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+button:hover {
+    background-color: #45a049; /* Color de fondo verde oscuro al pasar el ratón */
+}
+
+.ir-al-carrito {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Mensaje de carrito vacío */
+.cart-empty {
+    text-align: center;
+    color: #999;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
