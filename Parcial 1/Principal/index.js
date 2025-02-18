@@ -210,11 +210,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
-
-
 // Favoritos
 
 // obtener el usuario_id desde el servidor (PHP)
@@ -262,9 +257,6 @@ function agregarFavorito(producto_id) {
 
 
 
-
-
-
 // menu
 const btnMenu= document.querySelector('.container-menu-icon');
 const menuList = document.querySelector('.menu-list');
@@ -299,7 +291,7 @@ document.getElementById("logout").addEventListener("click", function() {
 // Formulario(Login)
 window.onload = function() {
     // Una solicitud AJAX para verificar la sesión
-    fetch('check_session.php', {
+    fetch('Formulario/Check_sesion.php', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
